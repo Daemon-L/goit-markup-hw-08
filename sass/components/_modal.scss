@@ -1,0 +1,65 @@
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+
+  transition-property: opacity, visibility, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.modal-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: var(--accent-color);
+  }
+
+  &:focus {
+    outline: 1px solid var(--accent-color);
+  }
+}

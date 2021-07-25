@@ -1,0 +1,45 @@
+.team {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  background-color: #f5f4fa;
+}
+
+.team__item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  // border-radius и тут и в team-item, скругления пропадают без одного из них
+  margin-right: 30px;
+
+  &:last-of-type {
+    margin-right: 0px;
+  }
+}
+
+.team__person {
+  background-color: var(--primary-back-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  border-radius: 0px 0px 4px 4px; //  и тут
+}
+
+.team__name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+
+  margin-bottom: 10px;
+}
+
+.team__position {
+  margin-bottom: 16px;
+}
+
+.team__list {
+  display: flex;
+  padding-left: 0px;
+}

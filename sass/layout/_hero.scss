@@ -7,19 +7,18 @@
     url(../images/decoration/hero.jpg);
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
+  max-width: 480px;
   align-items: center;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
 }
 
 .heroes__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   color: var(--primary-back-color);
   text-transform: uppercase;
@@ -28,7 +27,6 @@
 
 .heroes__button {
   padding: 10px 32px;
-
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primary-back-color);
@@ -38,5 +36,30 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+}
+
+// ************************ TABLET ***************************
+
+@media screen and (min-width: 768px) {
+
+  .heroes {
+    max-width: 768px;
+  }
+}
+
+// *********************** DESKTOP ********************
+
+@media screen and (min-width: 1200px) {
+
+  .heroes {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .heroes__title {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }

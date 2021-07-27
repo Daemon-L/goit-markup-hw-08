@@ -32,3 +32,27 @@
 
   padding: 27px 0;
 }
+
+// 
+
+@media screen and (max-width: 767px) {
+  .engage {
+    display: none;
+  }
+}
+
+// ************************ TABLET ***************************
+
+@media screen and (min-width: 480px) and (max-width: 767px ) {
+    
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+// *********************** DESKTOP ********************
+
+@media screen and (min-width: 1200px) {
+ 
+}

@@ -10,20 +10,19 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   // border-radius и тут и в team-item, скругления пропадают без одного из них
-  margin-right: 30px;
+}
 
-  &:last-of-type {
-    margin-right: 0px;
-  }
+.team__foto {
+  width: 450px;
+  height: 460px;
 }
 
 .team__person {
   background-color: var(--primary-back-color);
   padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
-
+  padding-bottom: 24px;
+  padding-left: 122px;
+  padding-right: 122px;
   border-radius: 0px 0px 4px 4px; //  и тут
 }
 
@@ -31,7 +30,6 @@
   font-size: 16px;
   font-weight: 500;
   color: #212121;
-
   margin-bottom: 10px;
 }
 
@@ -39,7 +37,81 @@
   margin-bottom: 16px;
 }
 
-.team__list {
-  display: flex;
-  padding-left: 0px;
+// ************************** MOB *******************
+
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+// ************************ TABLET ***************************
+
+
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    padding-left: 0px;
+  }
+
+  .team__foto {
+    width: 354px;
+    height: 374px;
+  }
+
+  .team__person {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px ) {
+
+  .team__list {
+    flex-wrap: wrap;
+    padding-left: 0px;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  
+  .team__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+    
+}
+
+
+// *********************** DESKTOP ********************
+
+@media screen and (min-width: 1200px) {
+  .team__foto {
+    width: 270px;
+    height: 260px;
+  }
+
+  .team__item {
+    margin-right: 30px;
+
+    &:last-of-type {
+      margin-right: 0px;
+    }
+  }
+
+  .team__person {
+    background-color: var(--primary-back-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  
+    border-radius: 0px 0px 4px 4px; //  и тут
+  }
 }

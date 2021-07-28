@@ -1,10 +1,5 @@
 .subscribe {
-  padding-top: 12px;
-  margin-left: 93px;
-}
-
-.subscribe__form {
-  display: flex;
+  padding-top: 0px;
 }
 
 .subscribe__box {
@@ -29,8 +24,7 @@
   color: var(--primary-back-color);
   font-size: 16px;
   line-height: 1.25;
-  margin-right: 12px;
-
+  
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
@@ -57,5 +51,50 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+}
+
+
+// ************************** MOB *******************
+
+@media screen and (max-width: 767px) {
+  .subscribe__field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .subscribe__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+// ************************ TABLET ***************************
+
+@media screen and (min-width: 480px) and (max-width: 767px ) {
+    
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+// *********************** DESKTOP ********************
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    padding-top: 12px;
+    margin-left: 93px;
+  }
+
+  .subscribe__form {
+    display: flex;
+  }
+
+  .subscribe__field {
+    margin-right: 12px;
+  
   }
 }

@@ -5,17 +5,6 @@
   padding-bottom: 60px;
 }
 
-.footer__social {
-  margin-left: 70px;
-  padding-top: 12px;
-  padding-bottom: 40px;
-  width: 206px;
-}
-
-.footer--container {
-  display: flex;
-  justify-content: flex-start;
-}
 
 .footer__title {
   color: var(--primary-back-color);
@@ -24,14 +13,13 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-
   margin-bottom: 20px;
 }
 
 .footer-contacts-item:not(:last-child) {
   display: block;
   margin-bottom: 9px;
-  padding-right: 19px;
+  // padding-right: 19px;
 }
 
 .address {
@@ -40,4 +28,55 @@
 
 .links--footer {
   color: rgba(255, 255, 255, 0.6);
+}
+
+
+// ************************** MOB *******************
+
+@media screen and (max-width: 767px) {
+
+  .contacts-container {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+
+  .footer__title {
+    text-align: center;
+  
+  }
+
+  .footer__social {
+    
+    padding-bottom: 60px;
+    padding-left: 122px;
+    padding-right: 122px;
+   // эти падинги это костыль надо както исправить
+  }
+}
+
+// ************************ TABLET ***************************
+
+@media screen and (min-width: 480px) and (max-width: 767px ) {
+    
+}
+
+@media screen and (min-width: 768px) {
+  .footer--container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+}
+
+// *********************** DESKTOP ********************
+
+@media screen and (min-width: 1200px) {
+
+  .footer__social {
+    margin-left: 79px;
+    padding-top: 12px;
+    padding-bottom: 40px;
+    width: 206px;
+  }
+ 
 }

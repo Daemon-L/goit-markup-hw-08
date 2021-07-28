@@ -237,6 +237,13 @@ p {
   }
 }
 
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .contacts__list {
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .heder__link {
     padding-top: 32px;
@@ -246,10 +253,14 @@ p {
     display: flex;
     font-weight: 500;
   }
+  .contacts__list {
+    margin-left: auto;
+  }
   .heder__item:not(:last-child) {
     margin-right: 50px;
   }
   .contacts__icon {
+    display: inline-block;
     margin-right: 10px;
     fill: var(--primary-font-color);
     transition-property: fill;
@@ -257,8 +268,6 @@ p {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contacts__links {
-    display: flex;
-    align-items: center;
     color: var(--primary-font-color);
   }
   .contacts__links:hover .contacts__icon,
@@ -272,6 +281,13 @@ p {
     display: flex;
     margin-left: auto;
     align-items: center;
+  }
+  .contacts__links {
+    display: flex;
+    align-items: center;
+  }
+  .heder__item-contacts:not(:last-child) {
+    margin-right: 30px;
   }
 }
 

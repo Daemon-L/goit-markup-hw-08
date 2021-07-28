@@ -3,24 +3,8 @@ body {
   font-family: var(--primary-font-family);
   font-size: 14px;
   color: var(--primary-font-color);
-
-  // background-color: thistle;
   background-color: var(--primary-back-color);
 }
-
-
-// // ***************************************************************
-// @media screen and (min-width: 768px) {
-//   body {
-//     background-color: rgb(220, 243, 184);
-//   }
-// }
-// @media screen and (min-width: 1200px) {
-//   body {
-//     background-color: var(--primary-back-color);
-//   }
-// }
-// // ********************************************************************
 
 h1,
 h2,

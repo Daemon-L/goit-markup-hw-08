@@ -5,7 +5,6 @@
   padding-bottom: 60px;
 }
 
-
 .footer__title {
   color: var(--primary-back-color);
   letter-spacing: 0.03em;
@@ -42,15 +41,14 @@
 
   .footer__title {
     text-align: center;
-  
   }
 
   .footer__social {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     padding-bottom: 60px;
-    padding-left: 122px;
-    padding-right: 122px;
-   // эти падинги это костыль надо както исправить
   }
 }
 
@@ -61,16 +59,31 @@
 }
 
 @media screen and (min-width: 768px) {
-  .footer--container {
+  .foter-tablet-box {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
+
+    margin-bottom: 60px;
   }
 
+  .footer__title {
+    text-align: center;
+  }
+
+  .footer__social {
+    
+    width: 206px;
+  }
 }
 
 // *********************** DESKTOP ********************
 
 @media screen and (min-width: 1200px) {
+
+  .footer--container {
+    display: flex;
+    justify-content: flex-start;
+  }
 
   .footer__social {
     margin-left: 79px;
@@ -78,5 +91,4 @@
     padding-bottom: 40px;
     width: 206px;
   }
- 
 }

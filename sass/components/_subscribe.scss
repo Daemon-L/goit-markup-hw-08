@@ -73,7 +73,17 @@
 
 // ************************ TABLET ***************************
 
-@media screen and (min-width: 480px) and (max-width: 767px ) {
+@media screen and (min-width: 768px) and (max-width: 1199px ) {
+  .subscribe__field {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  .subscribe__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
     
 }
 

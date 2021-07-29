@@ -1,9 +1,40 @@
 .filters__list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .filters__item:not(:last-child) {
   margin-right: 8px;
+}
+
+// ************************** MOB *******************
+
+@media screen and (max-width: 767px) {
+  .filters__list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-height: 91px;
+    // надо не так!!!
+  }
+}
+
+// ************************ TABLET ***************************
+
+@media screen and (min-width: 768px) {
+  .filters__list {
+    margin-bottom: 30px;
+  }
+
+  .filters__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+// *********************** DESKTOP ********************
+
+@media screen and (min-width: 1200px) {
+  .filters__list {
+    margin-bottom: 50px;
+  }
 }

@@ -27,7 +27,7 @@
 .works-item {
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc((100% - 96px) / 3);
+  flex-basis: 100%;
   cursor: pointer;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -75,4 +75,58 @@
   &:focus .works-overlay {
     transform: translateY(0);
   }
+}
+
+
+
+// ************************** MOB *******************
+
+@media screen and (max-width: 767px) {
+
+
+  .works-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+// ************************ TABLET ***************************
+
+@media screen and (min-width: 480px) and (max-width: 767px ) {
+    
+}
+
+@media screen and (min-width: 768px) {
+
+  .works-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 64px) / 2);
+    cursor: pointer;
+    
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+}
+
+// *********************** DESKTOP ********************
+
+@media screen and (min-width: 1200px) {
+
+
+  .works-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 96px) / 3);
+    cursor: pointer;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+ 
 }

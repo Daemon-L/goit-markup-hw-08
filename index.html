@@ -52,6 +52,11 @@
                     </a>
                 </li>
             </ul>
+            <button class="menu-btn" type="button" data-menu-open>
+                <svg class="menu-btn-icon">
+                    <use href="./images/decoration/icons.svg#burger-icon"></use>
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -155,7 +160,7 @@
                 <h2 class="regular-title">Наша команда</h2>
                 <ul class="list team__list">
                     <li class="team__item">
-                        <img class="picture team__foto" src="./images/team/demyanenko.jpg" alt="фотография Игоря Демьяненко">
+                        <img class="picture" src="./images/team/demyanenko.jpg" alt="фотография Игоря Демьяненко">
                         <div class="team__person">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__position" lang="en">Product Designer</p>
@@ -193,7 +198,7 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img class="picture team__foto" src="./images/team/repina.jpg" alt="фотография Ольги Репиной">
+                        <img class="picture" src="./images/team/repina.jpg" alt="фотография Ольги Репиной">
                         <div class="team__person">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__position" lang="en">Frontend Developer</p>
@@ -231,7 +236,7 @@
                     </li>
 
                     <li class="team__item">
-                        <img class="picture team__foto" src="./images/team/tarasov.jpg" alt="фотография Николая Тарасова">
+                        <img class="picture" src="./images/team/tarasov.jpg" alt="фотография Николая Тарасова">
                         <div class="team__person">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__position" lang="en">Marketing</p>
@@ -269,7 +274,7 @@
                     </li>
 
                     <li class="team__item">
-                        <img class="picture team__foto" src="./images/team/ermakov.jpg" alt="фотография Михаила Ермакова">
+                        <img class="picture" src="./images/team/ermakov.jpg" alt="фотография Михаила Ермакова">
                         <div class="team__person">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__position" lang="en">UI Designer</p>
@@ -369,56 +374,59 @@
 
     <footer class="footer">
         <div class="container footer--container">
-            <div class="contacts-container">
-                <a class="logo logo--dark" href="./index.html"> <span class="logo--accent">Web</span>Studio</a>
-                <address id="address">
-                    <ul class="list">
-                        <li class="footer-contacts-item">
-                            <a class="links address" href="https://goo.gl/maps/96PufuZdgSu5sorj6" target="blank"
-                                rel="nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+            <div class="foter-tablet-box">
+                <div class="contacts-container">
+                    <a class="logo logo--dark" href="./index.html"> <span class="logo--accent">Web</span>Studio</a>
+                    <address id="address">
+                        <ul class="list">
+                            <li class="footer-contacts-item">
+                                <a class="links address" href="https://goo.gl/maps/96PufuZdgSu5sorj6" target="blank"
+                                    rel="nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="footer-contacts-item">
+                                <a class="links links--footer" href="mailto:info@devstudio.com">info@example.com</a>
+                            </li>
+                            <li class="footer-contacts-item">
+                                <a class="links links--footer" href="tel:+380961111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            
+
+                <div class="footer__social">
+                    <p class="footer__title">Присоединяйтесь</p>
+                    <ul class="list social-list">
+                        <li class="footer-social-item">
+                            <a href="#" class="social-list__link social-list__link--dark footer-social-link">
+                                <svg class="social-list__icon social-list__icon--dark">
+                                    <use href="./images/decoration/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer-contacts-item">
-                            <a class="links links--footer" href="mailto:info@devstudio.com">info@example.com</a>
+                        <li class="footer-social-item">
+                            <a href="#" class="social-list__link social-list__link--dark footer-social-link">
+                                <svg class="social-list__icon social-list__icon--dark">
+                                    <use href="./images/decoration/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="footer-contacts-item">
-                            <a class="links links--footer" href="tel:+380961111111">+38 099 111 11 11</a>
+                        <li class="footer-social-item">
+                            <a href="#" class="social-list__link social-list__link--dark footer-social-link">
+                                <svg class="social-list__icon social-list__icon--dark">
+                                    <use href="./images/decoration/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="social-list__link social-list__link--dark footer-social-link">
+                                <svg class="social-list__icon social-list__icon--dark">
+                                    <use href="./images/decoration/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-
-            <div class="footer__social">
-                <p class="footer__title">Присоединяйтесь</p>
-                <ul class="list social-list">
-                    <li class="footer-social-item">
-                        <a href="#" class="social-list__link social-list__link--dark footer-social-link">
-                            <svg class="social-list__icon social-list__icon--dark">
-                                <use href="./images/decoration/symbol-defs.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="#" class="social-list__link social-list__link--dark footer-social-link">
-                            <svg class="social-list__icon social-list__icon--dark">
-                                <use href="./images/decoration/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="#" class="social-list__link social-list__link--dark footer-social-link">
-                            <svg class="social-list__icon social-list__icon--dark">
-                                <use href="./images/decoration/symbol-defs.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="#" class="social-list__link social-list__link--dark footer-social-link">
-                            <svg class="social-list__icon social-list__icon--dark">
-                                <use href="./images/decoration/symbol-defs.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
 
             <div class="subscribe">
@@ -433,6 +441,7 @@
                     </span>
                 </form>
             </div>
+
         </div>
     </footer>
 
@@ -496,6 +505,7 @@
         </div>
     </div>
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

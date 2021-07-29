@@ -1,6 +1,7 @@
 .social-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .social-list__link {
@@ -49,4 +50,10 @@
 
 .social-list__icon--dark {
   fill: var(--primary-back-color);
+}
+
+@media screen and (max-width: 767px) {
+  .social-list {
+    min-width: 206px;
+  }
 }

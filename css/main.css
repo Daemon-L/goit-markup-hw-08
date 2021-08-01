@@ -233,6 +233,30 @@ p {
   align-items: center;
 }
 
+.mob-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-back-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 205ms linear, visibility 250ms linear;
+}
+
+.mob-menu--activ {
+  color: var(--accent-color);
+}
+
+.mob-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 @media screen and (max-width: 767px) {
   .nav__list {
     display: none;
@@ -246,11 +270,11 @@ p {
     justify-content: space-between;
   }
   .menu-btn {
-    height: 40px;
-    width: 40px;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    line-height: 0;
+    padding: 0;
     display: flex;
     align-items: center;
   }
@@ -260,9 +284,80 @@ p {
   }
   .menu-btn-icon {
     height: 40px;
+    width: 40px;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .close-bnt {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    line-height: 0;
+    padding: 0;
+  }
+  .close-bnt__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .mob-menu__close-bnt {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  .container__mob-menu {
+    position: relative;
+    padding-top: 48px;
+    padding-left: 40px;
+  }
+  .container__mob-menu {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .mob-nav__link {
+    font-size: 40px;
+    line-height: 1.18;
+  }
+  .mob-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .mob-nav {
+    margin-bottom: 302px;
+  }
+  .mob-contacts__fone {
+    font-size: 34px;
+    line-height: 1.18px;
+    margin-bottom: 32px;
+  }
+  .mob-contacts__mail {
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--primary-font-color);
+  }
+  .mob-contacts {
+    margin-bottom: 64px;
+  }
+  .mob-social {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+  .mob-social__link {
+    color: var(--accent-color);
+  }
+  .mob-social__item:not(:last-child) {
+    margin-right: 20px;
+  }
+  .mob-social__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 22px;
+    height: 0px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
   }
 }
 
@@ -336,6 +431,12 @@ p {
   margin: 0 auto;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 280px), screen and (min-resolution: 192dpi) and (min-width: 280px), screen and (min-resolution: 2dppx) and (min-width: 280px) {
+  .heroes {
+    background-image: url(../images/decoration/hero-mob@2x.jpg);
+  }
+}
+
 .heroes__title {
   font-weight: 900;
   font-size: 26px;
@@ -366,6 +467,12 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .heroes {
+    background-image: url(../images/decoration/hero-tab@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .heroes {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/decoration/hero.jpg);
@@ -376,6 +483,12 @@ p {
   .heroes__title {
     font-size: 44px;
     line-height: 1.36;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .heroes {
+    background-image: url(../images/decoration/hero@2x.jpg);
   }
 }
 
@@ -1120,7 +1233,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-font-color);
@@ -1174,5 +1287,11 @@ p {
 
 .submit-button:hover, .submit-button:focus {
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-agreement {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

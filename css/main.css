@@ -336,7 +336,8 @@ p {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 205ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear;
+  overflow-y: scroll;
 }
 
 .mob-menu--activ {
@@ -376,6 +377,7 @@ p {
   .container__mob-menu {
     position: relative;
     padding-top: 48px;
+    padding-bottom: 48px;
     padding-left: 40px;
   }
   .container__mob-menu {
@@ -961,7 +963,9 @@ p {
   .filters__list {
     flex-wrap: wrap;
     justify-content: flex-start;
-    min-height: 91px;
+  }
+  .filters__item:nth-child(-n + 3) {
+    margin-bottom: 15px;
   }
 }
 
@@ -1118,6 +1122,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow-y: scroll;
   min-width: 450px;
   min-height: 609px;
   padding: 40px;
@@ -1152,11 +1157,16 @@ p {
   outline: 1px solid var(--accent-color);
 }
 
+@media screen and (max-width: 480px) {
+  .modal {
+    min-width: 320px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
     min-height: 581px;
-    padding: 40px;
   }
 }
 
@@ -1245,6 +1255,7 @@ p {
 
 .modal-agreement {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-size: 12px;

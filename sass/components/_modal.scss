@@ -25,6 +25,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  overflow-y: scroll;
+
   min-width: 450px;
   min-height: 609px;
   padding: 40px;
@@ -64,33 +66,30 @@
   }
 }
 
-
-
 // ************************** MOB *******************
 
+@media screen and (max-width: 480px) {
+  .modal {
+    min-width: 320px;
+  }
+}
+
 @media screen and (max-width: 767px) {
-  
 }
 
 // ************************ TABLET ***************************
 
-@media screen and (min-width: 480px) and (max-width: 767px ) {
-    
+@media screen and (min-width: 480px) and (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) {
-
 }
 
 // *********************** DESKTOP ********************
 
 @media screen and (min-width: 1200px) {
- 
   .modal {
     min-width: 528px;
     min-height: 581px;
-    padding: 40px;
-    
   }
-
 }

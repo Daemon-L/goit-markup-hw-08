@@ -173,6 +173,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-width: 206px;
 }
 
 .social-list__link {
@@ -233,30 +234,6 @@ p {
   align-items: center;
 }
 
-.mob-menu {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--primary-back-color);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 205ms linear, visibility 250ms linear;
-}
-
-.mob-menu--activ {
-  color: var(--accent-color);
-}
-
-.mob-menu.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
 @media screen and (max-width: 767px) {
   .nav__list {
     display: none;
@@ -289,6 +266,90 @@ p {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .contacts__list {
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+  .heder__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .nav__list {
+    display: flex;
+    font-weight: 500;
+  }
+  .contacts__list {
+    margin-left: auto;
+  }
+  .heder__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .contacts__icon {
+    display: inline-block;
+    margin-right: 10px;
+    fill: var(--primary-font-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts__links {
+    color: var(--primary-font-color);
+  }
+  .contacts__links:hover .contacts__icon,
+  .contacts__links:focus .contacts__icon {
+    fill: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+  .contacts__links {
+    display: flex;
+    align-items: center;
+  }
+  .heder__item-contacts:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-back-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 205ms linear, visibility 250ms linear;
+}
+
+.mob-menu--activ {
+  color: var(--accent-color);
+}
+
+.mob-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+@media screen and (max-width: 767px) {
   .close-bnt {
     border: none;
     background-color: transparent;
@@ -299,6 +360,13 @@ p {
   .close-bnt__icon {
     width: 40px;
     height: 40px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .close-bnt:hover .close-bnt__icon,
+  .close-bnt:focus .close-bnt__icon {
+    fill: var(--accent-color);
   }
   .mob-menu__close-bnt {
     position: absolute;
@@ -358,63 +426,6 @@ p {
     height: 0px;
     border-bottom: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-  .contacts__list {
-    margin-top: 21px;
-    margin-bottom: 21px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .menu-btn {
-    display: none;
-  }
-  .heder__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-  .nav__list {
-    display: flex;
-    font-weight: 500;
-  }
-  .contacts__list {
-    margin-left: auto;
-  }
-  .heder__item:not(:last-child) {
-    margin-right: 50px;
-  }
-  .contacts__icon {
-    display: inline-block;
-    margin-right: 10px;
-    fill: var(--primary-font-color);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .contacts__links {
-    color: var(--primary-font-color);
-  }
-  .contacts__links:hover .contacts__icon,
-  .contacts__links:focus .contacts__icon {
-    fill: var(--accent-color);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contacts__list {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-  }
-  .contacts__links {
-    display: flex;
-    align-items: center;
-  }
-  .heder__item-contacts:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -1064,6 +1075,9 @@ p {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .works {
+    min-width: 354px;
   }
 }
 

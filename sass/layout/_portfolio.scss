@@ -1,6 +1,7 @@
 .works {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+
 }
 .works-title {
   font-size: 18px;
@@ -111,6 +112,9 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .works {
+    min-width: 354px;
+  }
 }
 
 // *********************** DESKTOP ********************

@@ -27,14 +27,26 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 450px;
-  height: 609px;
+  // width: 450px;
+  // height: 609px;
 
   padding: 40px;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
+
+  @media screen and (max-width: 1200px) {
+    width: 450px;
+    height: 609px;
+    overflow: auto;
+    @media screen and (max-width: 459px) {
+      width: 95%;
+    }
+    @media screen and (max-height: 609px) {
+      height: 100%;
+    }
+  }
 }
 
 .modal-button {
@@ -77,9 +89,9 @@
 
 // *********************** DESKTOP ********************
 
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    height: 581px;
-  }
-}
+// @media screen and (min-width: 1200px) {
+//   .modal {
+//     width: 528px;
+//     height: 581px;
+//   }
+// }

@@ -28,11 +28,6 @@
   &:focus .social-list__icon {
     fill: var(--primary-back-color);
   }
-  //   Почему не вышло как на лекции ??? fill не меняет цвет иконки
-  //   .social-list-link:hover,
-  //   .social-list-link:focus {
-  //   background-color: var(--accent-color);
-  //   fill: var(--primary-back-color); }
 }
 
 .social-list__link--dark {

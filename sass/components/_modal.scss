@@ -7,6 +7,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   transform: scale(1);
 
+  overflow-y: scroll;
+
   transition-property: opacity, visibility, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -24,8 +26,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  overflow-y: scroll;
 
   min-width: 450px;
   min-height: 609px;
@@ -72,17 +72,6 @@
   .modal {
     min-width: 320px;
   }
-}
-
-@media screen and (max-width: 767px) {
-}
-
-// ************************ TABLET ***************************
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-}
-
-@media screen and (min-width: 768px) {
 }
 
 // *********************** DESKTOP ********************

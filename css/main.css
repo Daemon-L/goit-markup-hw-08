@@ -1040,7 +1040,7 @@ p {
   letter-spacing: 0.03em;
   color: var(--primary-back-color);
   background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
+  padding: 77px 24px;
   position: absolute;
   top: 0;
   left: 0;
@@ -1091,6 +1091,9 @@ p {
   .works {
     min-width: 354px;
   }
+  .works-overlay {
+    padding: 49px 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1102,6 +1105,9 @@ p {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .works-overlay {
+    padding: 63px 24px;
   }
 }
 

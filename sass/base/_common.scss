@@ -46,7 +46,6 @@ p {
     border-radius: 2px;
 
     position: absolute;
-    bottom: -1px;
     width: 100%;
   }
 }
@@ -70,10 +69,25 @@ p {
 }
 
 
+@media screen and (min-width: 768px) {
+
+  .links {
+    &--active::after {
+      bottom: 0;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+
+  .links {
+    &--active::after {
+      bottom: -1px;
+    }
   }
 }
 

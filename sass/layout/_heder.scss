@@ -57,9 +57,24 @@
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .contacts__list {
-    margin-top: 21px;
-    margin-bottom: 21px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
+
+  .heder__link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .heder__link--tab {
+    margin-bottom: 10px;
+  }
+
+  .contacts__links.heder__link {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -72,6 +87,7 @@
     padding-bottom: 32px;
   }
 
+  
   .nav__list {
     display: flex;
     font-weight: 500;
@@ -96,6 +112,8 @@
 
   .contacts__links {
     color: var(--primary-font-color);
+    font-size: 12px;
+    line-height: 1.17;
 
     &:hover .contacts__icon,
     &:focus .contacts__icon {
@@ -103,6 +121,8 @@
     }
   }
 }
+
+
 
 // *********************** DESKTOP ********************
 

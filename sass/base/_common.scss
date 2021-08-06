@@ -73,7 +73,7 @@ p {
 
   .links {
     &--active::after {
-      bottom: 0;
+      bottom: -1px;
     }
   }
 }
@@ -82,12 +82,6 @@ p {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-
-  .links {
-    &--active::after {
-      bottom: -1px;
-    }
   }
 }
 

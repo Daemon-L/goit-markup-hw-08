@@ -59,6 +59,14 @@
   .contacts__list {
     padding-top: 21px;
     padding-bottom: 21px;
+
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  .contacts__links {
+    display: flex;
+    align-items: center;
   }
 
   .heder__link {
@@ -78,6 +86,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .menu-btn {
     display: none;
   }
@@ -86,7 +95,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
-
   
   .nav__list {
     display: flex;
@@ -103,8 +111,14 @@
 
   .contacts__icon {
     display: inline-block;
+    line-height: 0;
     margin-right: 10px;
     fill: var(--primary-font-color);
+
+    width: 14px;
+    height: 14px;
+
+
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -112,9 +126,6 @@
 
   .contacts__links {
     color: var(--primary-font-color);
-    font-size: 12px;
-    line-height: 1.17;
-
     &:hover .contacts__icon,
     &:focus .contacts__icon {
       fill: var(--accent-color);
@@ -122,12 +133,14 @@
   }
 }
 
-
-
 // *********************** DESKTOP ********************
 
 @media screen and (min-width: 1200px) {
   .contacts__list {
+
+    font-size: 14px;
+    line-height: 1.14;
+
     display: flex;
     margin-left: auto;
     align-items: center;
@@ -140,5 +153,10 @@
 
   .heder__item-contacts:not(:last-child) {
     margin-right: 30px;
+  }
+
+  .contacts__icon {
+    width: 16px;
+    height: 16px;
   }
 }
